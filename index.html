@@ -1258,10 +1258,43 @@
             </div>
         </section>
 
-       
+
 
 
         <!-- testimonial-area-end -->
+
+
+        <!-- CTA Section Starts  -->
+
+        <section class="p-8" style="margin: 100px auto;">
+            <div class="container mx-auto">
+              <div class="row">
+                <div class="col-xl-10 offset-xl-1 col-md-12 col-12">
+                  <div class="py-6 px-6 px-xl-0 rounded-4 " style="padding: 50px 20px; background: linear-gradient(180deg, rgba(0, 0, 255, 0.356), rgba(0, 0, 255, 0.481));">
+                    <div class="row align-items-center">
+                      <div class="offset-xl-1 col-xl-5 col-md-6 col-12">
+                        <div>
+                          <h2 class="h1 text-white mb-3">Let’s find the right course for you!</h2>
+                          <p class="text-white fs-4">…and achieve their learning goals. With our expert tutors, your goals are
+                            closer
+                            than ever!</p>
+                          <button class="btn btn-dark">Start learning</button>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-md-6 col-12">
+                        <div class="text-center">
+                          <img src="https://geeksui.codescandy.com/geeks/assets/images/education/course.png" alt="learning" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        <!-- CTA Section Ends  -->
+
 
         <!-- newsletter-area -->
         <section class="newsletter__area" data-aos="fade-up" data-aos-delay="200">
@@ -1317,13 +1350,15 @@
                             </div>
                         </div>
                         <div class="col-70" data-aos="fade-left" data-aos-delay="280">
-                            <div class="event__item-wrap">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
+                            <!-- Swiper Container -->
+                            <div class="swiper event-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
                                         <div class="event__item shine__animate-item">
                                             <div class="event__item-thumb">
-                                                <a href="events-details.html" class="shine__animate-link"><img
-                                                        src="assets/img/events/event_thumb01.jpg" alt="img"></a>
+                                                <a href="events-details.html" class="shine__animate-link">
+                                                    <img src="assets/img/events/event_thumb01.jpg" alt="img">
+                                                </a>
                                             </div>
                                             <div class="event__item-content">
                                                 <span class="date">28 September, 2024</span>
@@ -1332,11 +1367,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
+                                    <div class="swiper-slide">
                                         <div class="event__item shine__animate-item">
                                             <div class="event__item-thumb">
-                                                <a href="events-details.html" class="shine__animate-link"><img
-                                                        src="assets/img/events/event_thumb02.jpg" alt="img"></a>
+                                                <a href="events-details.html" class="shine__animate-link">
+                                                    <img src="assets/img/events/event_thumb02.jpg" alt="img">
+                                                </a>
                                             </div>
                                             <div class="event__item-content">
                                                 <span class="date">22 September, 2024</span>
@@ -1345,11 +1381,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
+                                    <div class="swiper-slide">
                                         <div class="event__item shine__animate-item">
                                             <div class="event__item-thumb">
-                                                <a href="events-details.html" class="shine__animate-link"><img
-                                                        src="assets/img/events/event_thumb03.jpg" alt="img"></a>
+                                                <a href="events-details.html" class="shine__animate-link">
+                                                    <img src="assets/img/events/event_thumb03.jpg" alt="img">
+                                                </a>
                                             </div>
                                             <div class="event__item-content">
                                                 <span class="date">15 September, 2024</span>
@@ -1359,6 +1396,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                                <!-- Add Navigation -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
                             </div>
                         </div>
                     </div>
@@ -1368,6 +1410,7 @@
                 <img src="assets/img/events/event_shape.png" alt="img" class="alltuchtopdown">
             </div>
         </section>
+
         <!-- event-area-end -->
 
 
@@ -1751,8 +1794,36 @@
             },
         });
     </script>
-    
-
+    <script>
+        const eventSwiper = new Swiper('.event-swiper', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
     <script>
         $(document).ready(function () {
             // Trigger odometer animation when section is visible (optional for performance)
