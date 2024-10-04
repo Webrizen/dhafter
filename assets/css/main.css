@@ -20662,3 +20662,170 @@ blockquote > p {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* Hero Section Unique design  */
+.lead-gen-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: #fdf5e6;
+  border-radius: 15px;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.lead-gen-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.lead-auto-type {
+  font-size: 1.6rem;
+  color: #8a8a8a;
+}
+
+.lead-heading {
+  font-size: 3.5rem;
+  color: #1d1d1f;
+  line-height: 1.2;
+}
+
+.lead-highlight {
+  color: #4b73ff;
+}
+
+.lead-description {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin: 20px 0;
+}
+
+.lead-user-stats {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.lead-user-images img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: -10px;
+}
+
+.lead-user-info {
+  margin-left: 30px; /* Adjusted spacing */
+}
+
+.lead-user-info h4 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.lead-user-subtext {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.lead-app-buttons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  margin-top: 0px;
+}
+
+.lead-app-buttons a img {
+  width: auto;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.lead-carousel {
+  flex: 1;
+  max-width: 45%;
+  position: relative;
+}
+
+#lead-swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#lead-swiper-pagination {
+  bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+  .lead-gen-section {
+    padding: 40px;
+  }
+
+  .lead-heading {
+    font-size: 3rem;
+  }
+
+  .lead-gen-content,
+  .lead-carousel {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .lead-gen-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lead-gen-content{
+    text-align: center;
+  }
+
+  .lead-user-stats{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .lead-heading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .lead-description,
+  .lead-user-info h4,
+  .lead-user-subtext {
+    text-align: center;
+  }
+
+  .lead-user-stats {
+    justify-content: center;
+  }
+
+  .lead-app-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
