@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/tg-cursor.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 
     <style>
         .video-play-button {
@@ -115,6 +117,77 @@
 
         .carousel-indicators .active {
             background-color: #fb0201 !important;
+        }
+
+        /* Unique CTA Section */
+        .unique-landing-section {
+            background-color: #faf2e8;
+            border-radius: 15px;
+        }
+
+        .unique-auto-type-text {
+            color: #4c4c4c;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .unique-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .unique-description {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .unique-user-info {
+            margin-top: 20px;
+            position: relative;
+            padding-left: 18%;
+        }
+
+        .unique-user-images img {
+            width: 50px;
+            height: 50px;
+            border: 4px solid gray;
+            border-radius: 50%;
+            position: absolute;
+            left: 0px;
+            top: 0;
+            bottom: 0;
+            right: auto;
+            margin: auto 0;
+            z-index: 3;
+        }
+
+        .unique-user-images img:nth-child(1) {
+            position: absolute;
+            left: 5%;
+            z-index: 2;
+        }
+
+        .unique-user-images img:nth-child(2) {
+            position: absolute;
+            left: 10%;
+            z-index: 0;
+        }
+
+        .unique-app-links .btn {
+            border-radius: 10px;
+        }
+
+        .unique-phone-wrapper {
+            position: relative;
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 30px;
+            max-width: 320px;
+            margin: 0 auto;
         }
     </style>
 
@@ -357,13 +430,14 @@
         <!-- banner-area -->
         <section class="banner-area banner-bg tg-motion-effects" data-background="assets/img/banner/banner_bg.png">
             <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
+        
                 <div class="carousel-inner">
                     <!-- First Slide -->
                     <div class="carousel-item active">
                         <div class="container">
-                            <div class="row justify-content-between align-items-start">
-                                <div class="col-xl-5 col-lg-6">
+                            <div class="row justify-content-between align-items-center">
+                                <!-- Content Section -->
+                                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12">
                                     <div class="banner__content" style="text-align: left;">
                                         <h3 class="title tg-svg" data-aos="fade-right" data-aos-delay="400">
                                             Excel in NORCET with
@@ -373,23 +447,20 @@
                                             Prepare for NORCET with top-notch coaching and comprehensive study resources
                                         </p>
                                         <div class="banner__btn-wrap" data-aos="fade-right" data-aos-delay="800">
-                                            <a href="contact.html" class="btn arrow-btn">Start Your Journey to NORCET
-                                                Success!
-                                                <img src="assets/img/icons/right_arrow.svg" alt="img"
-                                                    class="injectable"></a>
+                                            <a href="contact.html" class="btn arrow-btn">Start Your Journey to NORCET Success!
+                                                <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <!-- Image Section -->
+                                <div class="col-lg-6 col-md-8 col-sm-12 text-center">
                                     <div class="banner__images">
-                                        <img src="assets/img/banner/banner_img.png" alt="img" class="main-img"
+                                        <img src="assets/img/banner/banner_img.png" alt="img" class="main-img img-fluid"
                                             data-aos="fade-up" data-aos-delay="200">
                                         <div class="shape big-shape" data-aos="fade-up-right" data-aos-delay="600">
-                                            <img src="assets/img/banner/banner_shape01.png" alt="shape"
-                                                class="tg-motion-effects1">
+                                            <img src="assets/img/banner/banner_shape01.png" alt="shape" class="tg-motion-effects1">
                                         </div>
-                                        <img src="assets/img/banner/bg_dots.svg" alt="shape"
-                                            class="shape bg-dots rotateme">
+                                        <img src="assets/img/banner/bg_dots.svg" alt="shape" class="shape bg-dots rotateme">
                                         <img src="assets/img/banner/banner_shape02.png" alt="shape"
                                             class="shape small-shape tg-motion-effects3">
                                     </div>
@@ -397,11 +468,13 @@
                             </div>
                         </div>
                     </div>
+        
                     <!-- Second Slide -->
                     <div class="carousel-item">
                         <div class="container">
-                            <div class="row justify-content-between align-items-start">
-                                <div class="col-xl-5 col-lg-6">
+                            <div class="row justify-content-between align-items-center">
+                                <!-- Content Section -->
+                                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12">
                                     <div class="banner__content" style="text-align: left;">
                                         <h3 class="title tg-svg" data-aos="fade-right" data-aos-delay="400">
                                             Master Your Skills with
@@ -412,21 +485,19 @@
                                         </p>
                                         <div class="banner__btn-wrap" data-aos="fade-right" data-aos-delay="800">
                                             <a href="about.html" class="btn arrow-btn">Discover Your Path to Success!
-                                                <img src="assets/img/icons/right_arrow.svg" alt="img"
-                                                    class="injectable"></a>
+                                                <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <!-- Image Section -->
+                                <div class="col-lg-6 col-md-8 col-sm-12 text-center">
                                     <div class="banner__images">
-                                        <img src="assets/img/banner/banner_img.png" alt="img" class="main-img"
+                                        <img src="assets/img/banner/banner_img.png" alt="img" class="main-img img-fluid"
                                             data-aos="fade-up" data-aos-delay="200">
                                         <div class="shape big-shape" data-aos="fade-up-right" data-aos-delay="600">
-                                            <img src="assets/img/banner/banner_shape01.png" alt="shape"
-                                                class="tg-motion-effects1">
+                                            <img src="assets/img/banner/banner_shape01.png" alt="shape" class="tg-motion-effects1">
                                         </div>
-                                        <img src="assets/img/banner/bg_dots.svg" alt="shape"
-                                            class="shape bg-dots rotateme">
+                                        <img src="assets/img/banner/bg_dots.svg" alt="shape" class="shape bg-dots rotateme">
                                         <img src="assets/img/banner/banner_shape02.png" alt="shape"
                                             class="shape small-shape tg-motion-effects3">
                                     </div>
@@ -434,37 +505,36 @@
                             </div>
                         </div>
                     </div>
+        
                     <!-- Third Slide -->
                     <div class="carousel-item">
                         <div class="container">
-                            <div class="row justify-content-between align-items-start">
-                                <div class="col-xl-5 col-lg-6">
+                            <div class="row justify-content-between align-items-center">
+                                <!-- Content Section -->
+                                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12">
                                     <div class="banner__content" style="text-align: left;">
                                         <h3 class="title tg-svg" data-aos="fade-right" data-aos-delay="400">
                                             Achieve Your Dream with
                                             <br>Dedicated <b style="color: #fb0201;">Coaching Programs</b>
                                         </h3>
                                         <p data-aos="fade-right" data-aos-delay="600">
-                                            Our focused coaching programs are designed to help you succeed in
-                                            competitive exams.
+                                            Our focused coaching programs are designed to help you succeed in competitive exams.
                                         </p>
                                         <div class="banner__btn-wrap" data-aos="fade-right" data-aos-delay="800">
                                             <a href="services.html" class="btn arrow-btn">Explore Our Services!
-                                                <img src="assets/img/icons/right_arrow.svg" alt="img"
-                                                    class="injectable"></a>
+                                                <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <!-- Image Section -->
+                                <div class="col-lg-6 col-md-8 col-sm-12 text-center">
                                     <div class="banner__images">
-                                        <img src="assets/img/banner/banner_img.png" alt="img" class="main-img"
+                                        <img src="assets/img/banner/banner_img.png" alt="img" class="main-img img-fluid"
                                             data-aos="fade-up" data-aos-delay="200">
                                         <div class="shape big-shape" data-aos="fade-up-right" data-aos-delay="600">
-                                            <img src="assets/img/banner/banner_shape01.png" alt="shape"
-                                                class="tg-motion-effects1">
+                                            <img src="assets/img/banner/banner_shape01.png" alt="shape" class="tg-motion-effects1">
                                         </div>
-                                        <img src="assets/img/banner/bg_dots.svg" alt="shape"
-                                            class="shape bg-dots rotateme">
+                                        <img src="assets/img/banner/bg_dots.svg" alt="shape" class="shape bg-dots rotateme">
                                         <img src="assets/img/banner/banner_shape02.png" alt="shape"
                                             class="shape small-shape tg-motion-effects3">
                                     </div>
@@ -473,29 +543,27 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Controls (Next and Previous Buttons) -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+        
                 <!-- Carousel Indicators (Pagination) -->
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
             </div>
         </section>
+        
 
 
         <!-- banner-area-end -->
@@ -1266,33 +1334,46 @@
 
         <!-- CTA Section Starts  -->
 
-        <section class="p-8" style="margin: 100px auto;">
-            <div class="container mx-auto">
-              <div class="row">
-                <div class="col-xl-10 offset-xl-1 col-md-12 col-12">
-                  <div class="py-6 px-6 px-xl-0 rounded-4 " style="padding: 50px 20px; background: linear-gradient(180deg, rgba(0, 0, 255, 0.356), rgba(0, 0, 255, 0.481));">
-                    <div class="row align-items-center">
-                      <div class="offset-xl-1 col-xl-5 col-md-6 col-12">
-                        <div>
-                          <h2 class="h1 text-white mb-3">Let’s find the right course for you!</h2>
-                          <p class="text-white fs-4">…and achieve their learning goals. With our expert tutors, your goals are
-                            closer
-                            than ever!</p>
-                          <button class="btn btn-dark">Start learning</button>
+        <section class="unique-landing-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left Side: Text and App Info -->
+                    <div class="col-lg-6 unique-left-section">
+                        <span class="unique-auto-type-text">Auto Type Text</span>
+                        <h1 class="unique-title">Lead generation <span class="text-primary">mobile</span> app landing
+                            page</h1>
+                        <p class="unique-description">Lorem Ipsum is simply dummy text of the printing industry. Ipsum
+                            has been the industry's standard.</p>
+                        <div class="unique-user-info d-flex align-items-center mb-3">
+                            <div class="unique-user-images d-flex me-2">
+                                <img src="https://placehold.co/500x500" alt="User 1" class="rounded-circle me-1">
+                                <img src="https://placehold.co/500x500" alt="User 2" class="rounded-circle me-1">
+                                <img src="https://placehold.co/500x500" alt="User 3" class="rounded-circle">
+                            </div>
+                            <div>
+                                <h5 class="mb-0">12M+ Active Users</h5>
+                                <p class="mb-0">The best application to manage your customer worldwide</p>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-xl-6 col-md-6 col-12">
-                        <div class="text-center">
-                          <img src="https://geeksui.codescandy.com/geeks/assets/images/education/course.png" alt="learning" class="img-fluid">
+                        <div class="unique-app-links">
+                            <a href="#" class="btn btn-dark btn-lg me-2"><i class="bi bi-google-play"></i> Get it on
+                                Google Play</a>
+                            <a href="#" class="btn btn-dark btn-lg"><i class="bi bi-apple"></i> Download on the App
+                                Store</a>
                         </div>
-                      </div>
                     </div>
-                  </div>
+
+                    <!-- Right Side: App Preview -->
+                    <div class="col-lg-6 text-center unique-right-section">
+                        <div class="unique-phone-wrapper position-relative">
+                            <img src="https://placehold.co/600x800" alt="App Preview" class="img-fluid">
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </section>
-          
+        </section>
+
+
         <!-- CTA Section Ends  -->
 
 
@@ -1763,6 +1844,19 @@
     <script>
         const swiper = new Swiper('.courses-swiper-active', {
             loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
@@ -1779,10 +1873,23 @@
     </script>
     <script>
         const testimonialSwiper = new Swiper('.testimonial-swiper-active-two', {
-            loop: true, // Enable infinite looping
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
             autoplay: {
-                delay: 3000, // Time between slides
-                disableOnInteraction: false, // Keep autoplay even after user interactions
+                delay: 3000,
+                disableOnInteraction: false,
             },
             navigation: {
                 nextEl: '.testimonial-button-next',

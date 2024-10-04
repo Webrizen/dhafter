@@ -3183,7 +3183,14 @@ textarea {
 }
 @media (max-width: 1500px) {
   .banner-bg {
-    min-height: auto;
+    min-height: 85vh;
+  }
+  .carousel .slide{
+    padding: 10px 0;
+  }
+
+  .banner__images img{
+    transform: translateY(0%);
   }
 }
 .banner-bg .line-shape {
@@ -10105,6 +10112,9 @@ a.slide_btn {
   }
   .next_btn {
     right: 50px;
+  }
+  .slide img{
+    transform: translateY(0%);
   }
 }
 
